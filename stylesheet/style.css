@@ -1,0 +1,11 @@
+#main {
+  margin: auto;
+  border: 2px solid black;
+  width: 800px;
+}
+
+h2  {
+  text-align: center;
+  font-family: 'Anonymous Pro';
+  color: #2c3e50;
+}
