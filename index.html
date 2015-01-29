@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Space Invaders</title>
+    <link rel="stylesheet" href="stylesheet/style.css" charset="utf-8">
+    <link href='http://fonts.googleapis.com/css?family=Anonymous+Pro:400,700' rel='stylesheet' type='text/css'>
+    <script type="application/javascript" src="vendor/keymaster.js"></script>
+    <script type="application/javascript" src="lib/util.js"></script>
+    <script type="application/javascript" src="lib/movingObject.js"></script>
+    <script type="application/javascript" src="lib/invader.js"></script>
+    <script type="application/javascript" src="lib/ship.js"></script>
+    <script type="application/javascript" src="lib/bullet.js"></script>
+    <script type="application/javascript" src="lib/game.js"></script>
+    <script type="application/javascript" src="lib/gameView.js"></script>
+  </head>
+  <body>
+    <h2>Space Invaders</h2>
+    <div id="main">
+      <canvas></canvas>
+    </div>
+
+
+    <script type="application/javascript">
+    (function () {
+      var canvasEl = document.getElementsByTagName("canvas")[0];
+      canvasEl.width = SpaceInvaders.Game.DIM_X;
+      canvasEl.height = SpaceInvaders.Game.DIM_Y;
+      var ctx = canvasEl.getContext("2d");
+      var game = new SpaceInvaders.Game();
+      new SpaceInvaders.GameView(game, ctx).start();
+    })();
+    </script>
+  </body>
+</html>
