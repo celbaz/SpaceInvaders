@@ -5,7 +5,13 @@
 }
 
 h2  {
+  font-size: 36px;
   text-align: center;
   font-family: 'Anonymous Pro';
   color: #2c3e50;
+}
+
+
+body {
+  background: #76C3BD;
 }
