@@ -18,19 +18,14 @@
       <canvas></canvas>
     </div>
 
-    <button name="new-game">New Game</button>
-
     <script type="application/javascript">
     (function () {
       var canvasEl = document.getElementsByTagName("canvas")[0];
       canvasEl.width = SpaceInvaders.Game.DIM_X;
       canvasEl.height = SpaceInvaders.Game.DIM_Y;
       var ctx = canvasEl.getContext("2d");
-      var game = new SpaceInvaders.Game();
-      new SpaceInvaders.GameView(game, ctx).start();
-      // $(".new-game").on('click', function () {
-      //   new SpaceInvaders.GameView(game, ctx).start();
-      // });
+      new SpaceInvaders.GameView(ctx).start();
+
     })();
     </script>
   </body>
